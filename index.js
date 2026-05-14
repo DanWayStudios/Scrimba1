@@ -1,38 +1,99 @@
-// onePointer, twoPointer, threePointer functions (home and guest)
-    // add to the current home-score or guest-score (1, 2 or 3)
-    
-let homeScoreEl = document.getElementById("home-score")
-let guestScoreEl = document.getElementById("guest-score")
+const characters = [
+	"A",
+	"B",
+	"C",
+	"D",
+	"E",
+	"F",
+	"G",
+	"H",
+	"I",
+	"J",
+	"K",
+	"L",
+	"M",
+	"N",
+	"O",
+	"P",
+	"Q",
+	"R",
+	"S",
+	"T",
+	"U",
+	"V",
+	"W",
+	"X",
+	"Y",
+	"Z",
+	"a",
+	"b",
+	"c",
+	"d",
+	"e",
+	"f",
+	"g",
+	"h",
+	"i",
+	"j",
+	"k",
+	"l",
+	"m",
+	"n",
+	"o",
+	"p",
+	"q",
+	"r",
+	"s",
+	"t",
+	"u",
+	"v",
+	"w",
+	"x",
+	"y",
+	"z",
+	"0",
+	"1",
+	"2",
+	"3",
+	"4",
+	"5",
+	"6",
+	"7",
+	"8",
+	"9",
+	"~",
+	"`",
+	"!",
+	"@",
+	"#",
+	"$",
+	"%",
+	"^",
+	"&",
+	"*",
+	"(",
+	")",
+	"_",
+	"-",
+	"+",
+	"=",
+	"{",
+	"[",
+	"}",
+	"]",
+	",",
+	"|",
+	":",
+	";",
+	"<",
+	">",
+	".",
+	"?",
+	"/",
+];
 
-let homeScore = 0
-let guestScore = 0 
-
-function onePointerHome() {
-    homeScore += 1
-    homeScoreEl.textContent = homeScore
-}
-
-function twoPointerHome() {
-    homeScore += 2
-    homeScoreEl.textContent = homeScore
-}
-
-function threePointerHome() {
-    homeScore += 3
-    homeScoreEl.textContent = homeScore
-}
-
-function onePointerGuest() {
-    guestScore += 1
-    guestScoreEl.textContent = guestScore
-}
-
-function twoPointerGuest() {
-    guestScore += 2
-    guestScoreEl.textContent = guestScore
-}
-
-function threePointerGuest() {
-    guestScore += 3
-    guestScoreEl.textContent = guestScore
-}
+// listen for button click
+// choose a random 15 characters from the characters array
+// concatenate them together into 1 string
+// repeat for 2 passwords
+// push into password1 and password2
